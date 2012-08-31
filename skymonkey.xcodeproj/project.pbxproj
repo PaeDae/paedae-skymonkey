@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960F3D7A15F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F3D7915F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m */; };
 		9632EBE715D992FA00B287F6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE615D992FA00B287F6 /* Icon@2x.png */; };
 		9632EBE915D9930800B287F6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE815D9930800B287F6 /* Default@2x.png */; };
 		9632EBED15D993F500B287F6 /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9632EBEB15D993F500B287F6 /* libPaeDaePrizeSDK.a */; };
@@ -118,6 +119,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960F3D7815F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; path = PaeDaeSharedPrizeDelegate.h; sourceTree = "<group>"; };
+		960F3D7915F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaeDaeSharedPrizeDelegate.m; sourceTree = "<group>"; };
 		9632EBE615D992FA00B287F6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		9632EBE815D9930800B287F6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		9632EBEB15D993F500B287F6 /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
@@ -680,6 +683,8 @@
 				F4D0CBD115ACD01C007C74DF /* Highscores.m */,
 				F4D0CBD215ACD01C007C74DF /* Main.h */,
 				F4D0CBD315ACD01C007C74DF /* Main.m */,
+				960F3D7815F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.h */,
+				960F3D7915F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -864,6 +869,7 @@
 				F4D0CBD415ACD01C007C74DF /* Game.m in Sources */,
 				F4D0CBD515ACD01C007C74DF /* Highscores.m in Sources */,
 				F4D0CBD615ACD01C007C74DF /* Main.m in Sources */,
+				960F3D7A15F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

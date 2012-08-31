@@ -1,6 +1,7 @@
 #import "Game.h"
 #import "Main.h"
 #import "Highscores.h"
+#import "PaeDaeSharedPrizeDelegate.h"
 
 @interface Game (Private)
 - (void)initPlatforms;
@@ -376,11 +377,12 @@
     
     if (achievementId) {
         //show a paedae prize...
+        
         NSDictionary *prizeOptions = [NSDictionary dictionaryWithObjectsAndKeys:
                                      achievementId, @"achievement_id",
                                      nil];
-    
-        [[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeOptions];
+         
+        [[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeOptions andDelegate:[PaeDaeSharedPrizeDelegate sharedDelegate]];
     }
 }
 
