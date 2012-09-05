@@ -45,6 +45,9 @@
 
 - (void) setOrientation:(UIInterfaceOrientation) orientation;
 
+#pragma mark - support properties
+@property (nonatomic, retain) UIView *anchorView;
+
 #pragma mark - unsupported API calls (do not use)
 @property (nonatomic, assign) BOOL bootstrapped;
 @property (nonatomic, assign) BOOL enabled;
