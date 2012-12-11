@@ -353,7 +353,9 @@
      [CCTransitionFade transitionWithDuration:1 scene:[Highscores sceneWithScore:score] withColor:ccWHITE]];
     
     NSString *achievementId = nil;
-    if (score >= 1000 && score < 5000) {
+    if (score < 1000) {
+        achievementId = @"com.paedae.nice_list_short";
+    } else if (score >= 1000 && score < 5000) {
         achievementId = @"com.skymonkey.1000.earned";
     } else if (score >= 5000 && score < 10000) {
         achievementId = @"com.skymonkey.5000.earned";

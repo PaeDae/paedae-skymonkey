@@ -4,10 +4,12 @@
 //
 //  Created by PaeDae on 8/13/12.
 //  Copyright (c) 2012 PaeDae. All rights reserved.
-//
+//  Version 0.3.5
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#define PAEDAE_SDK_VERSION @"0.3.5"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -51,6 +53,7 @@
 #pragma mark - unsupported API calls (do not use)
 @property (nonatomic, assign) BOOL bootstrapped;
 @property (nonatomic, assign) BOOL enabled;
+@property (nonatomic, assign) BOOL apiAvailable;
 @property (nonatomic, retain) id <PaeDaeInitDelegate>initDelegate;
 @property (nonatomic, retain) id <PaeDaePrizeDelegate>prizeDelegate;
 @property (nonatomic, retain) UIViewController *controller;
