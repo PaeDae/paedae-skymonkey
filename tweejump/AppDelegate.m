@@ -112,7 +112,7 @@
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [Game scene]];
     
-    [[PaeDaePrizeSDK sharedManager] initWithKey:@"8cdcad90-c55b-012f-70b9-12313f04f84c" andDelegate:self];
+    [[PaeDaeSDK sharedManager] initWithKey:@"8cdcad90-c55b-012f-70b9-12313f04f84c" andDelegate:self];
 }
 
 

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7811DCDB1790A2E9001F00F3 /* libPaeDaeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7811DCD41790A094001F00F3 /* libPaeDaeSDK.a */; };
 		9606201E1677E7DC008FF08D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606201B1677E7D5008FF08D /* CoreLocation.framework */; };
 		960620211677E7E6008FF08D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9606201F1677E7E0008FF08D /* AdSupport.framework */; };
-		960620241677ECA8008FF08D /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960620221677EC70008FF08D /* libPaeDaePrizeSDK.a */; };
 		960F3D7A15F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F3D7915F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m */; };
 		9632EBE715D992FA00B287F6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE615D992FA00B287F6 /* Icon@2x.png */; };
 		9632EBE915D9930800B287F6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE815D9930800B287F6 /* Default@2x.png */; };
@@ -121,10 +121,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7811DCD01790A094001F00F3 /* libPaeDaeSDKArmv6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv6.a; sourceTree = "<group>"; };
+		7811DCD11790A094001F00F3 /* libPaeDaeSDKArmv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv7.a; sourceTree = "<group>"; };
+		7811DCD21790A094001F00F3 /* libPaeDaeSDKArmv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv7s.a; sourceTree = "<group>"; };
+		7811DCD31790A094001F00F3 /* libPaeDaeSDKSimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKSimulator.a; sourceTree = "<group>"; };
+		7811DCD41790A094001F00F3 /* libPaeDaeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDK.a; sourceTree = "<group>"; };
+		7811DCD51790A094001F00F3 /* PaeDaeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSDK.h; sourceTree = "<group>"; };
 		9606201B1677E7D5008FF08D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9606201F1677E7E0008FF08D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		960620221677EC70008FF08D /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
-		960620231677EC70008FF08D /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
 		960F3D7815F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSharedPrizeDelegate.h; sourceTree = "<group>"; };
 		960F3D7915F088FF00EE27C3 /* PaeDaeSharedPrizeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaeDaeSharedPrizeDelegate.m; sourceTree = "<group>"; };
 		9632EBE615D992FA00B287F6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
@@ -350,9 +354,9 @@
 				F49E735C15ACCF46009C8E84 /* QuartzCore.framework in Frameworks */,
 				9606201E1677E7DC008FF08D /* CoreLocation.framework in Frameworks */,
 				F49E735E15ACCF46009C8E84 /* OpenGLES.framework in Frameworks */,
-				960620241677ECA8008FF08D /* libPaeDaePrizeSDK.a in Frameworks */,
 				960620211677E7E6008FF08D /* AdSupport.framework in Frameworks */,
 				F49E736015ACCF46009C8E84 /* OpenAL.framework in Frameworks */,
+				7811DCDB1790A2E9001F00F3 /* libPaeDaeSDK.a in Frameworks */,
 				F49E736215ACCF46009C8E84 /* AudioToolbox.framework in Frameworks */,
 				F49E736415ACCF46009C8E84 /* AVFoundation.framework in Frameworks */,
 				F49E736615ACCF46009C8E84 /* UIKit.framework in Frameworks */,
@@ -364,13 +368,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9632EBEA15D993F500B287F6 /* PaeDaePrizeSDK */ = {
+		7811DCCE1790A093001F00F3 /* PaeDaeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				960620221677EC70008FF08D /* libPaeDaePrizeSDK.a */,
-				960620231677EC70008FF08D /* PaeDaePrizeSDK.h */,
+				7811DCCF1790A094001F00F3 /* extras */,
+				7811DCD41790A094001F00F3 /* libPaeDaeSDK.a */,
+				7811DCD51790A094001F00F3 /* PaeDaeSDK.h */,
 			);
-			path = PaeDaePrizeSDK;
+			path = PaeDaeSDK;
+			sourceTree = "<group>";
+		};
+		7811DCCF1790A094001F00F3 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				7811DCD01790A094001F00F3 /* libPaeDaeSDKArmv6.a */,
+				7811DCD11790A094001F00F3 /* libPaeDaeSDKArmv7.a */,
+				7811DCD21790A094001F00F3 /* libPaeDaeSDKArmv7s.a */,
+				7811DCD31790A094001F00F3 /* libPaeDaeSDKSimulator.a */,
+			);
+			path = extras;
 			sourceTree = "<group>";
 		};
 		F49E734C15ACCF46009C8E84 = {
@@ -411,7 +427,7 @@
 		F49E736B15ACCF46009C8E84 /* tweejump */ = {
 			isa = PBXGroup;
 			children = (
-				9632EBEA15D993F500B287F6 /* PaeDaePrizeSDK */,
+				7811DCCE1790A093001F00F3 /* PaeDaeSDK */,
 				F49E74BD15ACCF4A009C8E84 /* AppDelegate.h */,
 				F49E74BE15ACCF4A009C8E84 /* AppDelegate.m */,
 				F49E74C015ACCF4A009C8E84 /* RootViewController.h */,
@@ -939,6 +955,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/tweejump/PaeDaePrizeSDK\"",
+					"\"$(SRCROOT)/tweejump/PaeDaeSDK/extras\"",
+					"\"$(SRCROOT)/tweejump/PaeDaeSDK\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -964,6 +982,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/tweejump/PaeDaePrizeSDK\"",
+					"\"$(SRCROOT)/tweejump/PaeDaeSDK/extras\"",
+					"\"$(SRCROOT)/tweejump/PaeDaeSDK\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (

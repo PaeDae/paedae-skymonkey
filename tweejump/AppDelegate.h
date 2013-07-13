@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PaeDaePrizeSDK.h"
+#import "PaeDaeSDK.h"
 
 @class RootViewController;
 

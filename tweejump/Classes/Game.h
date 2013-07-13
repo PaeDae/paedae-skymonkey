@@ -1,6 +1,6 @@
 #import "cocos2d.h"
 #import "Main.h"
-#import "PaeDaePrizeSDK.h"
+#import "PaeDaeSDK.h"
 
 @interface Game : Main
 {

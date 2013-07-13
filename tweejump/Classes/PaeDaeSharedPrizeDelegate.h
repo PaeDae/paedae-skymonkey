@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 PaeDae Inc. All rights reserved.
 
 #import <Foundation/Foundation.h>
-#import "PaeDaePrizeSDK.h"
+#import "PaeDaeSDK.h"
 
-@interface PaeDaeSharedPrizeDelegate : NSObject<PaeDaePrizeDelegate>
+@interface PaeDaeSharedPrizeDelegate : NSObject<PaeDaeAdDelegate>
 + (PaeDaeSharedPrizeDelegate *) sharedDelegate;
 
 - (void) PaeDae_PrizeWillDisplay: (UIView *)view;

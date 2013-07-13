@@ -264,7 +264,7 @@
 	if(bird_vel.y < 0) {
 		
 		t = kPlatformsStartTag;
-		for(t; t < kPlatformsStartTag + kNumPlatforms; t++) {
+		for(t ; t < kPlatformsStartTag + kNumPlatforms; t++) {
 			CCSprite *platform = (CCSprite*)[batchNode getChildByTag:t];
 
 			CGSize platform_size = platform.contentSize;
@@ -384,7 +384,7 @@
                                      achievementId, @"achievement_id",
                                      nil];
          
-        [[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeOptions andDelegate:[PaeDaeSharedPrizeDelegate sharedDelegate]];
+        [[PaeDaeSDK sharedManager] showAdWithOptions:prizeOptions andDelegate:[PaeDaeSharedPrizeDelegate sharedDelegate]];
     }
 }
 
