@@ -14,6 +14,7 @@
 		9632EBE715D992FA00B287F6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE615D992FA00B287F6 /* Icon@2x.png */; };
 		9632EBE915D9930800B287F6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9632EBE815D9930800B287F6 /* Default@2x.png */; };
 		9632EBF015D9953300B287F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9632EBEE15D9952600B287F6 /* SystemConfiguration.framework */; };
+		964959DB17EB9FC5005CD6ED /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 964959DA17EB9E98005CD6ED /* JSONKit.m */; };
 		F49E735C15ACCF46009C8E84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735B15ACCF46009C8E84 /* QuartzCore.framework */; };
 		F49E735E15ACCF46009C8E84 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735D15ACCF46009C8E84 /* OpenGLES.framework */; };
 		F49E736015ACCF46009C8E84 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49E735F15ACCF46009C8E84 /* OpenAL.framework */; };
@@ -121,10 +122,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7811DCD01790A094001F00F3 /* libPaeDaeSDKArmv6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv6.a; sourceTree = "<group>"; };
-		7811DCD11790A094001F00F3 /* libPaeDaeSDKArmv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv7.a; sourceTree = "<group>"; };
-		7811DCD21790A094001F00F3 /* libPaeDaeSDKArmv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKArmv7s.a; sourceTree = "<group>"; };
-		7811DCD31790A094001F00F3 /* libPaeDaeSDKSimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDKSimulator.a; sourceTree = "<group>"; };
 		7811DCD41790A094001F00F3 /* libPaeDaeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaeSDK.a; sourceTree = "<group>"; };
 		7811DCD51790A094001F00F3 /* PaeDaeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSDK.h; sourceTree = "<group>"; };
 		9606201B1677E7D5008FF08D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -134,6 +131,8 @@
 		9632EBE615D992FA00B287F6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		9632EBE815D9930800B287F6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		9632EBEE15D9952600B287F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		964959D917EB9E98005CD6ED /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		964959DA17EB9E98005CD6ED /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		F49E735715ACCF46009C8E84 /* skymonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skymonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49E735B15ACCF46009C8E84 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F49E735D15ACCF46009C8E84 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -371,22 +370,10 @@
 		7811DCCE1790A093001F00F3 /* PaeDaeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7811DCCF1790A094001F00F3 /* extras */,
 				7811DCD41790A094001F00F3 /* libPaeDaeSDK.a */,
 				7811DCD51790A094001F00F3 /* PaeDaeSDK.h */,
 			);
 			path = PaeDaeSDK;
-			sourceTree = "<group>";
-		};
-		7811DCCF1790A094001F00F3 /* extras */ = {
-			isa = PBXGroup;
-			children = (
-				7811DCD01790A094001F00F3 /* libPaeDaeSDKArmv6.a */,
-				7811DCD11790A094001F00F3 /* libPaeDaeSDKArmv7.a */,
-				7811DCD21790A094001F00F3 /* libPaeDaeSDKArmv7s.a */,
-				7811DCD31790A094001F00F3 /* libPaeDaeSDKSimulator.a */,
-			);
-			path = extras;
 			sourceTree = "<group>";
 		};
 		F49E734C15ACCF46009C8E84 = {
@@ -428,6 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				7811DCCE1790A093001F00F3 /* PaeDaeSDK */,
+				964959D917EB9E98005CD6ED /* JSONKit.h */,
+				964959DA17EB9E98005CD6ED /* JSONKit.m */,
 				F49E74BD15ACCF4A009C8E84 /* AppDelegate.h */,
 				F49E74BE15ACCF4A009C8E84 /* AppDelegate.m */,
 				F49E74C015ACCF4A009C8E84 /* RootViewController.h */,
@@ -890,6 +879,7 @@
 				F49E74BC15ACCF4A009C8E84 /* main.m in Sources */,
 				F49E74BF15ACCF4A009C8E84 /* AppDelegate.m in Sources */,
 				F49E74C215ACCF4A009C8E84 /* RootViewController.m in Sources */,
+				964959DB17EB9FC5005CD6ED /* JSONKit.m in Sources */,
 				F4D0CBD415ACD01C007C74DF /* Game.m in Sources */,
 				F4D0CBD515ACD01C007C74DF /* Highscores.m in Sources */,
 				F4D0CBD615ACD01C007C74DF /* Main.m in Sources */,

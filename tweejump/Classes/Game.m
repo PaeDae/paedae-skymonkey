@@ -377,6 +377,7 @@
         achievementId = @"com.skymonkey.1000000.earned";
     }
     
+    /*
     if (achievementId) {
         //show a paedae prize...
         
@@ -386,6 +387,9 @@
          
         [[PaeDaeSDK sharedManager] showAdWithOptions:prizeOptions andDelegate:[PaeDaeSharedPrizeDelegate sharedDelegate]];
     }
+    */
+    
+     [[PaeDaeSDK sharedManager] showAdWithDelegate:[PaeDaeSharedPrizeDelegate sharedDelegate]];
 }
 
 //- (BOOL)ccTouchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
